@@ -1,0 +1,21 @@
+body { font-family: sans-serif; text-align: center; background: #f0f8ff; }
+#game-area { height: 150px; margin: 20px 0; }
+
+#item {
+    width: 120px; padding: 10px; background: #ffffff;
+    border: 2px solid #333; border-radius: 8px;
+    display: inline-block; cursor: grab; user-select: none;
+}
+
+#bins { display: flex; justify-content: center; gap: 15px; }
+
+.bin {
+    width: 100px; height: 120px; color: white; font-weight: bold;
+    display: flex; align-items: center; justify-content: center;
+    border-radius: 8px; border: 2px solid #333;
+}
+
+.bin[data-type="organic"] { background: #2e7d32; } /* เขียว */
+.bin[data-type="recycle"] { background: #fbc02d; color: black; } /* เหลือง */
+.bin[data-type="general"] { background: #1565c0; } /* น้ำเงิน */
+.bin[data-type="hazard"]  { background: #c62828; } /* แดง */

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <title>เกมจำลองการคัดแยกขยะ</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>เกมจำลองการคัดแยกขยะ</h1>
+    <div id="score-board">คะแนน: <span id="score">0</span></div>
+    
+    <div id="game-area">
+        <div id="item" draggable="true">ขวดพลาสติก</div>
+    </div>
+
+    <div id="bins">
+        <div class="bin" data-type="organic">ถังอินทรีย์</div>
+        <div class="bin" data-type="recycle">ถังรีไซเคิล</div>
+        <div class="bin" data-type="general">ถังทั่วไป</div>
+        <div class="bin" data-type="hazard">ถังอันตราย</div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
